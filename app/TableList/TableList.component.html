@@ -1,0 +1,18 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Data Display</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-12">User ID</div>
+            <div class="col-lg-1 col-md-1 col-sm-12">ID</div>
+            <div class="col-lg-3 col-md-3 col-sm-12">Title</div>
+            <div class="col-lg-7 col-md-7 col-sm-12">Body</div>
+        </div>
+        <div class="row" *ngFor="let data of tableList">
+            <div class="col-lg-1 col-md-1 col-sm-12">{{data.userId}}</div>
+            <div class="col-lg-1 col-md-1 col-sm-12">{{data.id}}</div>
+            <div class="col-lg-3 col-md-3 col-sm-12">{{data.title}}</div>
+            <div class="col-lg-7 col-md-7 col-sm-12">{{data.body}}</div>
+        </div>
+    </div>
+
+</div>
