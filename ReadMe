@@ -1,0 +1,25 @@
+This project is being implemented using Angular 2 JavaScript Framework. I have also used bootstrap for styling and jquery datatable,
+to show the records in the table.
+
+Steps to start the project:
+1. clone the project into local disk
+2. Open up nodejs command prompt and navigate to the project folder.
+3. Type the follwong commands:
+   a) npm install -g
+   b) npm install bootstrap
+   c) npm install jquery -S
+   d) npm install datatables.net -S
+   e) npm install -D @types/jquery
+4. Finally, type npm start in the command prompt.
+
+Code Explanation:
+1. A new component is being added: TableList, which contains view, model, business logic and service details.
+2. I am calling the service url on Init of the TableList component. The Init method is making a call to getData() of TableListService class
+3. The service class is getting the data directly from the url and also handling errors(if any).
+4. The imports have been done for 'Http','Response','rxjs','Observable' and 'Injectable' modules, as because the service is hitting
+   a remote url, which require - requests and responses, rxjs is actually helpig to make the call.
+5. So, finally the data is being captured by a variable (dataService) of Interface (ITableListModel) type and is being accessed
+   in the corresponsing HTML(view) file.
+6. In the HTML file, a foreach (*ngFor) loop being implemented to show all the records.
+
+Note: datatable could not be implemented due to shortage of time. Thus, sorting could not be implemented.
